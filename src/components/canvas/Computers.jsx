@@ -2,23 +2,34 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from '../Loader'
-const Computers = () => {
+const Computers = ({isMobile}) => {
 
   const computer = useGLTF('./desktop_pc/scene.gltf')
   return (
     <mesh>
-      hey
       <hemisphereLight intensity={3} groundColor="black" />
       <pointLight intensity={10} />
       <spotLight position={[-20, 50, 10]} angle={0.12} intensity={1} castShadow shadow-mapSize={1024} penumbra={1} />
       <primitive object={computer.scene}
-        scale={0.75} position={[0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile?0.38:0.75} position={isMobile?[0,-2.1,-0.8]:[-0.9, -3.25, -1.5]}
+        rotation={[-0.0, -0.0, -0.0]}
       />
     </mesh>)
 }
 const ComputersCanvas = () => {
-  return (
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(()=>{
+    const mediaQuery = window.matchMedia('(max-width:700px)')
+  setIsMobile(mediaQuery.matches);
+  const handelMediaQueryChange = (event) =>{
+    setIsMobile(event.matches);
+  }
+  mediaQuery.addEventListener('change', handelMediaQueryChange);
+  return()=>{
+    mediaQuery.removeEventListener('change', handelMediaQueryChange)
+  }
+  },[])
+  return ( 
     <Canvas
       frameloop="demand"
       shadows
@@ -30,7 +41,7 @@ const ComputersCanvas = () => {
         <OrbitControls enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2} />
-        <Computers />
+        <Computers  isMobile={isMobile}/>
       </Suspense>
       <Preload all />
 
