@@ -20,6 +20,9 @@ import {
     tesla,
     shopify,
     carrent,
+    Chat,
+    Quicky,
+Movies,
     jobit,
     tripguide,
     threejs,
@@ -198,7 +201,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Chat App",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -207,19 +210,23 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Firebase",
+          color: "orange-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+          {
+          name: "Auth",
+          color: "black",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: Chat,
+      source_code_link: "https://github.com/OmarKing015/Chat-App",
     },
     {
-      name: "Job IT",
+      name: "Quicky",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -227,38 +234,40 @@ import {
           name: "react",
           color: "blue-text-gradient",
         },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
+          {
+          name: "Firebase",
+          color: "orange-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
+    
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: Quicky,
+      source_code_link: "",
     },
     {
-      name: "Trip Guide",
+      name: "Moives Finder",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "restAPI",
           color: "green-text-gradient",
         },
+       
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: Movies,
+      source_code_link: "https://github.com/OmarKing015/movieplace",
     },
   ];
   

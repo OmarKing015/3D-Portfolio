@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei'
@@ -7,13 +9,14 @@ const Ball = (props) => {
   return (
     <Float speed={0.75} rotationIntensity={1}><ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+      <mesh castShadow receiveShadow scale={3}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial color='#fff' polygonOffset polygonOffsetFactor={-5} />
-        <Decal position={[0.1, 0.1, 1]}
-          map={decal}
+        <Decal position={[0, 0, 1]}
+          map={decal} 
           flatshading
-          rotation={[2 * Math.PI, 0, 6.25]} />
+          rotation={[-4 * Math.PI, 0, 6.25]} />
+     
       </mesh>
     </Float>
   )
