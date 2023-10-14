@@ -245,7 +245,7 @@ const projects = [
       },
     ],
     image: Quicky,
-    source_code_link: "",
+    source_code_link: "https://github.com/OmarKing015/",
     source_link:"https://Quicky-tau.vercel.app"
   },
   {
