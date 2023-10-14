@@ -26,7 +26,7 @@ const Contact = () => {
 
     emailjs.send(
       "service_qebg2n3",
-      "template_p0dwwb7",
+      "template_bonjryc",
       {
         from_name: form.name,
         to_name: "Omar",
@@ -90,7 +90,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows="7"
-              name="Message"
+              name="message"
               value={form.message}
               onChange={handelChange}
               placeholder="What do you want to say?"
@@ -111,7 +111,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        {/* <EarthCanvas /> */}
+        <EarthCanvas />
       </motion.div>
     </div>
   );

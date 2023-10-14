@@ -8,17 +8,20 @@ import { styles } from "../style";
 
 const Tech = () => {
   return (
+    <>
     <div className="flex flex-row flex-wrap justify-center gap-10">
       <motion.div variants={textVariant()}>
         
-        <h3 className={`${styles.sectionHeadText} text-center `}>Some of Important technologies I use often</h3>
+        <h3 className={`${styles.sectionHeadText} text-center `}>Some of Important technologies I use usually</h3>
       </motion.div>
       {technologies.map((technoloy) => (
         <div className="w-28 h-28" key={technoloy.name}>
           <BallCanvas icon={technoloy.icon} />
         </div>
       ))}
-    </div>
+    </div>  
+        <p className={`${styles.sectionSubText} text-center  mt-6`}>And more...</p>
+</>
   );
 };
 
