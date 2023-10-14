@@ -203,7 +203,7 @@ const projects = [
   {
     name: "Chat App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to Chat,Send photos with a real-time messages and encrypted database with 'firebase' ",
     tags: [
       {
         name: "react",
@@ -228,7 +228,7 @@ const projects = [
   {
     name: "Quicky",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to Order Food, Desert, Drinks form sevral places , with a cool drag&drop future to make it easy to put the item to cart , with  a cool real map , And a strong database with 'firebase'",
     tags: [
       {
         name: "react",
@@ -249,7 +249,7 @@ const projects = [
   {
     name: "Moives Finder",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A website makes you able to find your fav movie and gives information about it and it's picture",
     tags: [
       {
         name: "React",
