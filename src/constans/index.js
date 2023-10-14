@@ -224,6 +224,7 @@ const projects = [
     ],
     image: Chat,
     source_code_link: "https://github.com/OmarKing015/Chat-App",
+    source_link:"https://prchat.vercel.app"
   },
   {
     name: "Quicky",
@@ -245,6 +246,7 @@ const projects = [
     ],
     image: Quicky,
     source_code_link: "",
+    source_link:"https://Quicky-tau.vercel.app"
   },
   {
     name: "Moives Finder",
@@ -267,6 +269,7 @@ const projects = [
     ],
     image: Movies,
     source_code_link: "https://github.com/OmarKing015/movieplace",
+    source_link:"https://movies-two-pied.vercel.app"
   },
 ];
 
