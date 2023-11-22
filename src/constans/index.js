@@ -26,6 +26,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  NewYear,
 } from "../assets";
 
 export const navLinks = [
@@ -249,28 +250,55 @@ const projects = [
     source_link:"https://Quicky-tau.vercel.app"
   },
   {
-    name: "Moives Finder",
+    name: "New Year",
     description:
-      "A website makes you able to find your fav movie and gives information about it and it's picture",
+      "A Simple animation with css and js for the new year",
     tags: [
       {
-        name: "React",
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Css",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "Html",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: NewYear,
+    source_code_link: "https://github.com/OmarKing015/New-Year",
+    source_link:"https://new-year-sage.vercel.app"
+  },
+  {
+    name: "Video Chat App",
+    description:
+      "A Video Chat app with realtime communication and share screen and more..",
+    tags: [
+      {
+        name: "TypeScript",
         color: "blue-text-gradient",
       },
       {
-        name: "restAPI",
-        color: "green-text-gradient",
+        name: "Css",
+        color: "blue-text-gradient",
       },
 
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "React",
+        color: "orange-text-gradient",
       },
+      {
+        name:"vite",
+        color:"pink-text-gradient"
+      }
     ],
-    image: Movies,
-    source_code_link: "https://github.com/OmarKing015/movieplace",
-    source_link:"https://movies-two-pied.vercel.app"
+    image: NewYear,
+    source_code_link: "https://github.com/OmarKing015/New-Year",
+    source_link:"https://new-year-sage.vercel.app"
   },
 ];
-
+  
 export { services, technologies, experiences, testimonials, projects };
