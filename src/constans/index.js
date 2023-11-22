@@ -26,6 +26,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  videoapp,
   NewYear,
 } from "../assets";
 
@@ -295,9 +296,9 @@ const projects = [
         color:"pink-text-gradient"
       }
     ],
-    image: NewYear,
-    source_code_link: "https://github.com/OmarKing015/New-Year",
-    source_link:"https://new-year-sage.vercel.app"
+    image: videoapp,
+    source_code_link: "https://github.com/OmarKing015/",
+    source_link:"https://conf-omar.vercel.app/"
   },
 ];
   
